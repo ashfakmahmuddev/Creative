@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style-type: none;
+}
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+/* menu part css start  */
+#menuPart {
+  padding: 30px;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menuBer ul {
+  display: flex;
+}
+.menuBer ul li {
+  padding: 0 25px;
+}
+.menuBer ul li a {
+  color: #181818;
+  font-size: 18px;
+  font-weight: 500;
+  transition: 0.4s;
+}
+.menuBer ul li a:hover {
+  color: #5956e8;
+}
+.button a {
+  color: white;
+  background-color: #5956e8;
+  padding: 15px 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 500;
+}
+#bannerPart {
+  background: url(../img/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 190px 0;
+}
+.banner {
+  display: flex;
+  justify-content: space-between;
+}
+.bannerContant {
+  width: 50%;
+}
+.bannerContant h1 {
+  color: #fffefe;
+  font-size: 65px;
+  font-weight: 700;
+  line-height: 80px;
+}
+.bannerContant p {
+  color: #fffefe;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  padding: 30px 50px 35px 0;
+}
+.bannerContant a {
+  color: #5956e8;
+  background-color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  padding: 15px 25px;
+  border-radius: 10px;
+}
+.bannerImg img {
+  width: 380px;
+}
+/* menu part css end  */
+
+/* service part css start  */
+#servicePart {
+  padding-top: 60px;
+}
+.commonHead {
+  padding-bottom: 40px;
+  text-align: center;
+}
+.commonHead h2 {
+  color: #181818;
+  font-size: 40px;
+  font-weight: 700;
+}
+.commonHead p {
+  color: #181818;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  padding: 10px 327px;
+}
+.serviceContent {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+.serviceBox {
+  width: 30%;
+  border: 1px solid #e3e3e3;
+  padding: 60px 45px;
+  border-radius: 10px;
+  transition: 0.4s;
+}
+.serviceBox h3 {
+  color: #181818;
+  font-size: 25px;
+  font-weight: 700;
+  padding: 25px 0;
+}
+.serviceBox p {
+  color: #181818;
+  font-size: 16px;
+  font-weight: 400;
+}
+.serviceBox:hover {
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.15);
+}
+/* service part css end  */
+
+/* portfolio part css start  */
+#portfolioPart{
+    padding: 40px 0;
+}
+.portfolioImg{
+    display: flex;
+    justify-content: space-between;
+}
+.img {
+  position: relative;
+  width: 270px;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.portfolioImgOverlay a{
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background: rgba(98, 84, 243, 0.9);
+  color: white;
+  text-align: center;
+  padding: 12px 0;
+  border-radius: 8px;
+  opacity: 0;
+  transition: .4s;
+}
+
+.img:hover .portfolioImgOverlay a{
+  opacity: 1;
+}
+/* portfolio part css end  */
+
+/* team part css start  */
+.teamMember{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+/* team part css end  */
+
+/* review part css start  */
+.reviewHead {
+  padding-bottom: 40px;
+  width: 540px;
+}
+.reviewHead h2 {
+  color: #181818;
+  font-size: 40px;
+  font-weight: 700;
+}
+.reviewHead p {
+  color: #181818;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  padding: 10px 0;
+}
+.reviewCard{
+    display: flex;
+    justify-content: space-between;
+}
+.reviewCard img{
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.15);
+}
+/* review part css end  */
