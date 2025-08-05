@@ -138,12 +138,12 @@ ol {
 /* service part css end  */
 
 /* portfolio part css start  */
-#portfolioPart{
-    padding: 40px 0;
+#portfolioPart {
+  padding: 40px 0;
 }
-.portfolioImg{
-    display: flex;
-    justify-content: space-between;
+.portfolioImg {
+  display: flex;
+  justify-content: space-between;
 }
 .img {
   position: relative;
@@ -160,34 +160,39 @@ ol {
   display: block;
 }
 
-.portfolioImgOverlay a{
+.portfolioImgOverlay a {
   position: absolute;
   left: 20px;
   right: 20px;
   bottom: 20px;
-  background: rgba(98, 84, 243, 0.9);
+  background: rgba(97, 84, 243, 0.993);
   color: white;
   text-align: center;
-  padding: 12px 0;
+  padding: 25px 0;
   border-radius: 8px;
   opacity: 0;
-  transition: .4s;
+  transition: 0.4s;
 }
-
-.img:hover .portfolioImgOverlay a{
+.portfolioImgOverlay a p {
+  padding-bottom: 5px;
+}
+.img:hover .portfolioImgOverlay a {
   opacity: 1;
 }
 /* portfolio part css end  */
 
 /* team part css start  */
-.teamMember{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 80px;
+.teamMember {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
 }
 /* team part css end  */
 
 /* review part css start  */
+#reviewPart {
+  padding-bottom: 60px;
+}
 .reviewHead {
   padding-bottom: 40px;
   width: 540px;
@@ -204,11 +209,197 @@ ol {
   line-height: 27px;
   padding: 10px 0;
 }
-.reviewCard{
-    display: flex;
-    justify-content: space-between;
+.reviewCard {
+  display: flex;
+  justify-content: space-between;
 }
-.reviewCard img{
-    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.15);
+.reviewCardContent {
+  width: 31.5%;
+  padding: 50px;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: 0.4s;
+  position: relative;
+}
+.reviewCardContent:hover {
+  box-shadow: 4px 4px 20px rgba(89, 86, 232, 0.466);
+}
+.reviewStar {
+  padding: 25px 0;
+}
+.reviewStar i {
+  color: #fbbf25;
+}
+.reviewCardContent p {
+  color: #181818;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+}
+.reviewCardContent h3 {
+  color: #181818;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 15px 0 5px 0;
+}
+.reviewCardContent h4 {
+  color: #5d5d5d;
+  font-size: 16px;
+  font-weight: 400;
+}
+.review1Img {
+  position: absolute;
+  right: 30px;
+  bottom: 25px;
 }
 /* review part css end  */
+
+/* team part css start  */
+.teamCard {
+  position: relative;
+  width: 31.5%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.teamCard img {
+  width: 100%;
+  display: block;
+}
+
+.teamOverlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -100%;
+  height: 45%;
+  background: linear-gradient(
+    to top,
+    rgba(89, 86, 232, 0.747),
+    rgba(255, 255, 255, 0)
+  );
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  transition: bottom 0.4s ease;
+}
+
+.teamCard:hover .teamOverlay {
+  bottom: 0;
+}
+
+.teamOverlay h3,
+.teamOverlay p {
+  margin: 2px 0;
+}
+
+/* team part css end  */
+
+/* news part css start  */
+#newsPart {
+  padding-bottom: 100px;
+}
+.newsCards {
+  display: flex;
+  justify-content: space-between;
+}
+.newsCard1 {
+  width: 31.5%;
+  padding: 20px 20px 50px 20px;
+  border: 1px solid #e3e3e3;
+  border-radius: 10px;
+  transition: 0.4s;
+}
+.newsCard1 img {
+  width: 100%;
+}
+.adminDate {
+  display: flex;
+  padding: 20px 0;
+}
+.admin {
+  padding-right: 15px;
+}
+.admin,
+.date {
+  color: #5d5d5d;
+  font-size: 16px;
+  font-weight: 400;
+}
+.newsCard1Content {
+  padding-left: 15px;
+}
+.newsCard1Content h3 {
+  color: #181818;
+  font-size: 20px;
+  font-weight: 600;
+  padding-right: 107px;
+}
+.newsCard1Content p {
+  color: #5d5d5d;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  padding: 15px 20px 10px 0;
+}
+.newsCard1Content a {
+  color: #5956e8;
+  font-size: 16px;
+  font-weight: 600;
+  padding-bottom: 40px;
+}
+.newsCard1:hover {
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.15);
+}
+/* news part css end  */
+
+/* footer part css start  */
+#footerPart {
+  padding: 100px 0;
+  background-color: #eef0fd;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+.footerPart1 {
+  width: 300px;
+}
+.footerPart1 p {
+  color: #5d5d5d;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  padding: 15px 0 20px 0;
+}
+.footerPart1 .footerIcon i {
+  color: #5956e8;
+  background-color: white;
+  padding: 10px;
+  border-radius: 45%;
+  margin-right: 15px;
+}
+.footerPart2 h3 {
+  color: #181818;
+  font-size: 20px;
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+.footerPart2 ul {
+  line-height: 35px;
+}
+.footerPart2 span,
+.footerPart2 p,
+.footerPart2 ul li a {
+  color: #5d5d5d;
+  font-size: 16px;
+  font-weight: 400;
+  transition: .4s;
+}
+.footerPart2 ul li a:hover{
+  color: #5956e8;
+}
+/* footer part css end  */
