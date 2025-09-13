@@ -375,13 +375,18 @@ ol {
   line-height: 27px;
   padding: 15px 0 20px 0;
 }
-.footerPart1 .footerIcon a {
-  height: 20px;
-  width: 20px;
+.footerIcon{
+  display: flex;
+}
+.footerIcon a {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #5956e8;
   background-color: white;
-  padding: 10px;
-  border-radius: 45%;
+  border-radius: 50%;
   margin-right: 15px;
 }
 .footerPart2 h3 {
